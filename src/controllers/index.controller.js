@@ -1,6 +1,6 @@
 const { Pool } = require('pg');
 const fs = require('fs');
-process.env.NODE_TLS_REJECT_UNAUTHORIZED="0"
+process.env.NODE_TLS_REJECT_UNAUTHORIZED ="0"
 
 const pool = new Pool({
   host:'ec2-54-161-208-31.compute-1.amazonaws.com',
@@ -12,7 +12,7 @@ const pool = new Pool({
   
 })
 
-const getUsers = async (req, res) => {
+ getUsers = async (req, res) => {
     const response = await pool.query('SELECT * FROM mostrar_denunciado()');
     res.status(200).json(response.rows);
     

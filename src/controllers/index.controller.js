@@ -12,7 +12,7 @@ const pool = new Pool({
   
 })
 
- getUsers = async (req, res) => {
+ const getUsers = async (req, res) => {
     const response = await pool.query('SELECT * FROM mostrar_denunciado()');
     res.status(200).json(response.rows);
     

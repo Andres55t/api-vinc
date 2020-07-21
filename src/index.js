@@ -10,7 +10,5 @@ app.use(express.urlencoded({ extended: false }));
 //routes
 app.use(require('./routes/index'));
 
-var port_number = server.listen(process.env.PORT || 3000);
-app.listen(port_number);
-
+app.listen(3000);
 console.log("Server on port 3000");

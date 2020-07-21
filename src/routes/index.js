@@ -10,8 +10,8 @@ router.get('/funs', getfuncionarios);
 router.get('/junta', getjunta);
 router.get('/rol', getrol);
 router.get('/sexo', getsexo);
-router.get('/sexo', getmedida);
-router.get('/sexo', getubicacion);
-router.get('/sexo', getvictima);
+router.get('/medida', getmedida);
+router.get('/ubicacion', getubicacion);
+router.get('/victima', getvictima);
 
 module.exports = router;

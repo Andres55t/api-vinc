@@ -13,6 +13,6 @@ router.get('/sexo', getsexo);
 router.get('/medida', getmedida);
 router.get('/ubicacion', getubicacion);
 router.get('/victima', getvictima);
-router.get('/ingestado', getactestado);
+router.get('/aestado', getactestado);
 
 module.exports = router;

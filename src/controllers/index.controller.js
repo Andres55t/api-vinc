@@ -68,6 +68,12 @@ const getdenunciante = async (req, res) => {
   res.status(200).json(response.rows);
  };
 
+ const getactestado = async (req, res) => {
+  const response = await pool.query("SELECT * FROM actualizar_estado(1,'datoaactualizar')");
+  res.status(200).json(response.rows);
+ };
+
+
 
 
   
@@ -82,7 +88,8 @@ const getdenunciante = async (req, res) => {
     getsexo,
     getmedida,
     getubicacion,
-    getvictima
+    getvictima,
+    getactestado
 
   };
   

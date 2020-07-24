@@ -73,6 +73,11 @@ const getdenunciante = async (req, res) => {
   res.status(200).json(response.rows);
  };
 
+ const getingestado = async (req, res) => {
+  const response = await pool.query("SELECT * FROM incertar_estado ('incertardato')");
+  res.status(200).json(response.rows);
+ };
+
 
 
 
@@ -89,7 +94,8 @@ const getdenunciante = async (req, res) => {
     getmedida,
     getubicacion,
     getvictima,
-    getactestado
+    getactestado,
+    getingestado
 
   };
   

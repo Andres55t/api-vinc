@@ -1,7 +1,7 @@
 const { Router } = require('express');
 
 const router = Router();
-const {getUsers, getdenunciante, getestado, getfuncion, getfuncionarios, getjunta, getrol, getsexo, getmedida, getubicacion, getvictima, getactestado} = require('../controllers/index.controller');
+const {getUsers, getdenunciante, getestado, getfuncion, getfuncionarios, getjunta, getrol, getsexo, getmedida, getubicacion, getvictima, getactestado, getingestado} = require('../controllers/index.controller');
 router.get('/users', getUsers);
 router.get('/denun', getdenunciante);
 router.get('/estado', getestado);
@@ -14,5 +14,6 @@ router.get('/medida', getmedida);
 router.get('/ubicacion', getubicacion);
 router.get('/victima', getvictima);
 router.get('/aestado', getactestado);
+router.get('/iestado', getingestado);
 
 module.exports = router;
